@@ -9,3 +9,7 @@ Description: This is a basic shopping cart with basic functionality to add and r
 <br>
 
 <img src="screenshot-02.png">
+
+<br>
+
+<img src="screenshot-03.png">
