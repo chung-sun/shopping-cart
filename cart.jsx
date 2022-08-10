@@ -152,13 +152,15 @@ const Products = (props) => {
   let cartList = cart.map((item, index) => {
     return (
         <Accordion.Item key={1+index} eventKey={1 + index}>
-        <Accordion.Header>
-          <Button>{item.name}</Button>
-        </Accordion.Header>
-        <Accordion.Body onClick={() => deleteCartItem(index)}
-          eventKey={1 + index}>
-          $ {item.cost} from {item.country}
-        </Accordion.Body>
+          <Card.Header>
+            <Accordion.Header>
+              <Button>{item.name}</Button>
+            </Accordion.Header>
+          </Card.Header>
+          <Accordion.Body onClick={() => deleteCartItem(index)}
+            eventKey={1 + index}>
+            <Card.Body>$ {item.cost} from {item.country}</Card.Body>
+          </Accordion.Body>
       </Accordion.Item>
     );
   });
